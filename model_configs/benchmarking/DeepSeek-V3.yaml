@@ -9,8 +9,9 @@ ENV_VARS:
   PYTHONWARNINGS: ignore
   NCCL_DEBUG: VERSION
 
-  # Command for 128 Nodes w/ MTP and 1F1B overlapping:
-  # A2A_OVERLAP=1 MODEL=DeepSeek-V3 PP=8 VPP=4 TP=2 EP=64 NNODES=128 GBS=8192 PR=fp8 bash sbatch_benchmarking.sh --recompute-granularity selective --recompute-modules mla_up_proj mlp --pipeline-model-parallel-layout "Et|(tt|)*30mL"
+  # Best practices for DSV3:
+  # best-practice/DeepSeekV3/run.sh
+  
 
 
 MODEL_ARGS:
